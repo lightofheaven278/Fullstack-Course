@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.frame {
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.frame>p {
+    margin-bottom: 10px;
+}
+
+form {
+display: grid;
+grid-template-columns: 370px 370px ;
+grid-auto-rows: minmax(30px, auto);
+    grid-template-areas: 
+    "a b"
+    "c c"
+    "d d"
+    "d d"
+    "d d"
+    "d d"
+    "d d";
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+#name {
+    grid-area: a;
+    padding: 10px;
+}
+#email {
+    grid-area: b;
+    padding: 10px;
+}
+#subject {
+    grid-area: c;
+    padding: 10px;
+}
+#message {
+    grid-area: d;
+    padding: 10px;
+}
+
+.send {
+    width: 740px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send button {
+    padding: 10px;
+}

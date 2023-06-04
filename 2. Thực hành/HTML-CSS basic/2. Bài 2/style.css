@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.main-frame {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.underline {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: rgb(231, 201, 150);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#no-1 {
+    flex: 1;
+}
+
+#no-2 {
+    flex: 2;
+}
+
+#no-2 p {
+    margin-bottom: 10px;
+}
+
+
+.company-info {
+    margin: 20px 0 15px 0;
+    display: flex;
+    color: rgb(171, 166, 166);
+}
+
+.icon-address {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url(./img/gray-location-icon-png-6.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-email {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url(./img/email-icon.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-phone {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url(./img/phone-icon.jpeg);
+    background-position: center;
+    background-size: contain;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 0.5px solid rgb(171, 166, 166);
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 0.5px solid rgb(171, 166, 166);
+}
+
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(17, 183, 178);
+    border: none;
+    border-radius: 3px;
+}

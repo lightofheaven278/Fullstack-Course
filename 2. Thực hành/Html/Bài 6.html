@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+
+<body>
+    <header>
+        <h1>Trang web thương mại điện tử</h1>
+        <nav>
+            <a href="#">Trang chủ</a> <a href="#">Sản phẩm</a> <a href="#">Giỏ hàng</a> <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table border="1">
+                <thead>
+                    <th>Ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th> Giá</th>
+                    <th>Mô tả</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">
+                            <img src="https://lh3.googleusercontent.com/rLLNp8QrI68R6nXuIx5UzS_3SxdjsPCDckf08bQ9H9h5XdRVR3iZQNZxIIxcl3OrZL-Y"
+                                alt="Ảnh hoa quả" width="150" height="150">
+                        </td>
+                        <td><a href="#">Sản phẩm 1</a></td>
+                        <td>100,000đ</td>
+                        <td rowspan="3">Mô tả sản phẩm 1</td>
+                    </tr>
+                    <tr>
+                        <td>Size: M</td>
+                        <td>100,000đ</td>
+                    </tr>
+                    <tr>
+                        <td>Color: N</td>
+                        <td>100,000đ</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://cdn.dribbble.com/users/887237/screenshots/3124316/media/bf0dfd969c378c74cdc491f5150f4cda.png?compress=1&resize=400x300&vertical=top"
+                                alt="Anh macbook pro" width="150" height="150">
+                        </td>
+                        <td><a href="#">Sản phẩm 2</a></td>
+                        <td>200,000đ</td>
+                        <td>Mô tả sản phẩm 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnsMssHHp30F_9zYuCwf3GmNZFKngvz12xQ&usqp=CAU"
+                                alt="Anh Iphone" width="150" height="150">
+                        </td>
+                        <td>Mô tả sản phẩm 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Liên hệ</h2>
+            <form action="" method="get">
+                Họ và tên: <input type="text" name="name" id="name"><br>
+                Email: <input type="email" name="email" id="name"><br>
+                Nội dung: <textarea name="content" id="content" cols="20" rows="4"></textarea><br>
+                <button type="button">Gửi</button>
+            </form>
+        </section>
+        <section>
+            <h2>Thanh toán</h2>
+            <form action="#" method="get">
+                Họ và tên: <input type="text" name="name" id="name"><br>
+                Email: <input type="email" name="email" id="name"><br>
+                Số thẻ: <input type="text" name="cardnumber" id="cardnumber"><br>
+                Ngày hết hạn: <input type="date" name="date" id="date"><br>
+                <button type="button">Thanh toán</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023 Trang web </p>
+    </footer>
+</body>
+
+</html>

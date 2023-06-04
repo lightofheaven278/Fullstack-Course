@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 1440px;
+    height: 840px; */
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+}
+
+.main-frame {
+    width: 1440px;
+    height: 840px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    position: relative;
+}
+
+header {
+    width: 1170px;
+    height: 107px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header h1 {
+    width: 103.68px;
+    height: 18.88px;
+    line-height: 18.88px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    width: 221px;
+    height: 19px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li {
+
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav button {
+    width: 138px;
+    height: 43px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 56px;
+    border: none;
+    color: #FFD600;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    /* justify-content: space-around; */
+
+}
+
+.main-content h2 {
+    width: 570px;
+    height: 194px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 96.8px;
+    position: absolute;
+    left: 135px;
+    top: 222px;
+}
+
+.main-content p {
+    width: 570px;
+    height: 71px;
+    margin-bottom: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38.4px;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 135px;
+    top: 440px;
+}
+
+.main-content button {
+    padding: 20px 87px;
+    width: 277px;
+    height: 62px;
+    border-radius: 100px;
+}
+
+.main-content .yellow {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-right: 10px;
+    position: absolute;
+    left: 135px;
+    top: 559px;
+    background-color: #FFD600;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.main-content .black {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+    position: absolute;
+    left: 428px;
+    top: 559px;
+    color: #FFD600;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+}
+
+.description .img-1 {
+    width: 298.46px;
+    height: 330.19px;
+    border-radius: 814px;
+    background: url(./img/ben-parker-background.png);
+    background-image: url(./img/ben-parker-OhKElOkQ3RE-unsplash\ \(1\)\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 168px;
+    left: 835px;
+    z-index: 2;
+}
+
+.description .img-2 {
+    width: 301.03px;
+    height: 344.2px;
+    position: absolute;
+    left: 1003.56px;
+    top: 328.5px;
+    border-radius: 0px 0px 814px 814px;
+    background-image: url(./img/bunka.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.img-1-background {
+    width: 298.46px;
+    height: 298.46px;
+    background: #111111;
+    border-radius: 814px;
+    position: absolute;
+    left: 835px;
+    top: 199.73px;
+    z-index: 1;
+}
+
+.description .comment-1 {
+    width: 195.58px;
+    height: 61.01px;
+    position: absolute;
+    top: 193px;
+    left: 1047px;
+    background-image: url(./img/Chat\ bubble.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+.description .comment-2 {
+    width: 204.58px;
+    height: 61.01px;
+    position: absolute;
+    left: 890px;
+    top: 531px;
+    background-image: url(./img/Chat\ bubble\ 3d.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+}
+
+.description .circle {
+    width: 114px;
+    height: 114px;
+    position: absolute;
+    top: 370px;
+    left: 1015px;
+    background-image: url(./img/Group\ 10808.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+.frame-10903 {
+    width: 1170px;
+    height: 0px;
+    position: absolute;
+    left: 135px;
+    top: 725px;
+}

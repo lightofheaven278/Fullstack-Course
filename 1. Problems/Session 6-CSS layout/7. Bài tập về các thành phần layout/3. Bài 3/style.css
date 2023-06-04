@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.container {
+    width: 540px;
+    margin: 80px auto;
+    /* padding: 20px 50px; */
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-auto-rows: minmax(110px, auto);
+    grid-template-areas:
+        "a b"
+        "c d"
+        "e f";
+    row-gap: 40px;
+    column-gap: 40px;
+
+
+}
+
+.book {
+    height: auto;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#no-1 {
+    grid-area: a;
+}
+
+#no-2 {
+    grid-area: b;
+}
+
+#no-3 {
+    grid-area: c;
+}
+
+#no-4 {
+    grid-area: d;
+}
+
+#no-5 {
+    grid-area: e;
+}
+
+#no-6 {
+    grid-area: f;
+}
+
+.book-img {
+    width: 250px;
+    height: 150px;
+    background-image: url(./img/top-10-books-every-college-student-read-1024x640.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.book p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.book p:nth-child(2) {
+    font-size: 18px;
+}
+
+.book p:nth-child(3) {
+    font-size: 14px;
+}
+
+.book button {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px 105px ;
+}

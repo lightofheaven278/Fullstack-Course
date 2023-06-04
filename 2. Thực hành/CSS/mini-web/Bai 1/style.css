@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+
+}
+.main {
+    width: 800px;
+    height: auto;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid gray;
+}
+.main h3 {
+    padding: 20px;
+}
+.main>p {
+    padding: 0 20px 0 20px;
+}
+.child {
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 20px;
+    background-color:rgb(254,251,238);
+    border-left: 10px solid rgb(221,203,94);
+}
+.child p{
+    padding: 10px 0px;
+}

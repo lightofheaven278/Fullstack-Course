@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành form trên lớp</title>
+    <style>
+       input {
+        margin: 3px;
+       }
+    </style>
+</head>
+
+<body>
+    <h2>Creat Account</h2>
+    <fieldset>
+        <legend>Registration information</legend>
+        <label for="First name">First name;</label>
+        <input type="text" name="First name" id="First name" placeholder="Enter your first name">
+        <label for="Last name">Last name:</label>
+        <input type="text" name="Last name" id="Last name" placeholder="Enter your last name"><br>
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" id="Email" placeholder="Enter your email">
+        <label for="Phone">Phone:</label>
+        <input type="text" name="Phone" id="Phone" placeholder="Enter your phone number" size="25"><br>
+        <label for="Pass">Password</label>
+        <input type="password" name="pass" id="pass" placeholder="enter your password">
+        <label for="Confirm Password">Confirm Password</label>
+        <input type="password" name="Confirm Password" id="Confirm Password" placeholder="Enter your password again" size="24">
+    </fieldset>
+    <fieldset>
+        <legend>Personal information</legend>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" checked>
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="femal">female</label>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="hobbies1" value="Music">
+        <label for="Music">Music</label>
+        <input type="checkbox" name="hobbies2" value="sport">
+        <label for="sport">sport</label>
+        <input type="checkbox" name="hobbies3" value="travel">
+        <label for="travel">Travel</label>
+        <input type="checkbox" name="hobbies4" value="movies">
+        <label for="movies">Movies</label><br>
+        <label for="SI">Source of Information</label>
+        <select name="SI" id="SI">
+            <option value="Employed">Employed</option>
+        </select>
+        <label for="income">Income</label>
+        <input type="range" name="income" min="100" max="1000"><br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+        <label for="PP">Profile Picture</label>
+        <input type="file" name="PP" id="PP"><br>
+        <label for="Ntn">Ngay/thang/nam</label>
+        <input type="date" id="Ntn" name="Ntn">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address"><br>
+        <label for="Bio">Note</label>
+        <textarea name="Bio" id="Bio" cols="45" rows="2"></textarea><br>
+        <input type="button" value="create">
+        <input type="reset" value="reset">
+
+    </fieldset>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select {
+            width: 80px;
+        }
+
+        table {
+            margin: 2px;
+        }
+
+        input {
+            margin: 3px 0px 3px 0px;
+        }
+
+        .firstcolumn {
+            width: 120px;
+        }
+
+        .buttonsize {
+            width: 120px;
+            height: 50px;
+        }
+
+        .selectgame {
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <table border="1">
+            <thead>
+                <th colspan="2">Registration Form</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcolumn"> Enter Name</td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Enter your email</td>
+                    <td><input type="text" name="email" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" id="address" cols="20" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select Game</td>
+                    <td class="selectgame">
+                        <input type="checkbox" name="selectgame" id="hockey"> Hockey <br>
+                        <input type="checkbox" name="selectgame" id="Football"> Football <br>
+                        <input type="checkbox" name="selectgame" id="Badminton"> Badminton <br>
+                        <input type="checkbox" name="selectgame" id="Cricket"> Cricket <br>
+                        <input type="checkbox" name="selectgame" id="Volleyball"> Volleyball <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" id="Male" checked>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female">
+                        <label for="gender">Female</label>
+                </tr>
+                <tr>
+                    <td>Select ur age</td>
+                    <td><select name="selectage" id="selectage">
+                            <option value="select">Select</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Selet Photo</td>
+                    <td><input type="file" name="photo" id="photo"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="buttonsize">Click me</button>
+                        <input type="reset" name="Reset" class="buttonsize"><br>
+                        <input type="submit" value="Submit Form" class="buttonsize">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 1440px;
+    height: 2942px;
+    margin: 0 auto;
+    background-color: #141416;
+}
+
+header {
+    width: 1440px;
+    height: 78px;
+    background-color: #222529;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 49px;
+    height: 43px;
+    margin-left: 38px;
+    margin-right: 10px;
+    background-image: url(./img/Fukouka-logo.png);
+    background-position: center;
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.header-logo p {
+    color: #FFFFFF;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 49px;
+    height: 43px;
+    margin-right: 10px;
+    background-image: url(./img/Tobey_Maguire_as_Spider-Man.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.nick-name {
+    color: #FCFCFD;
+    margin-right: 38px;
+}
+
+/* responsive for mobile ??? */
+@media screen and (max-width: 375px) {
+    .container {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 88px;
+        width: 100%;
+    }
+}
+
+/* for main */
+main h1 {
+    margin-top: 40px 190px;
+    text-align: center;
+}
+
+.article-layout {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+h1 {
+    color: white;
+}
