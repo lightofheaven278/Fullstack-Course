@@ -1,13 +1,11 @@
-let n = Number(prompt("Please input a number"));
-let number = 2;
-
-if (n < 2) {
-  alert("day khong phai la so nguyen to");
-} else {
-  for (number = 2; number < n; number++) {
-    if (n % number == 0) {
-      alert("day khong phai so nguyen to");
-      break;
-    } 
+let index = Number(prompt("Please input a number"));
+let checkPrime = true;
+for (let i = 2; i <= Math.sqrt(index); i++) {
+  if (index % i == 0) {
+    checkPrime = false;
+    break;
+  }
+  if (checkPrime) {
+    console.log(index);
   }
 }
