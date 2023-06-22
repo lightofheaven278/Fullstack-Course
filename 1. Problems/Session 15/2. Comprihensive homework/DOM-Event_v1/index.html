@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="form">
+            <form action="#">
+                <h2>Student Information</h2>
+                <table class="first-table">
+                    <tr>
+                        <td><label for="student-id">Student ID:</label></td>
+                        <td class="input-modify"><input type="text" id="student-id" name="student-id"
+                                placeholder="Please input your student ID"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="alert-modify"><small id="validate-id">Please input your student ID</small></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">Full Name:</label></td>
+                        <td class="input-modify"><input type="text" id="fname" name="fname" placeholder="Please input your full name"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="alert-modify"><small id="validate-name">Please input your full name</small></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td class="input-modify"><input type="email" id="email" name="email" placeholder="Please input your email"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="alert-modify"><small id="validate-email">Please input the <b>correct format</b> of email</small></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone-number">Phone Number:</label></td>
+                        <td class="input-modify"><input type="text" id="phone-number" name="phone-number"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="alert-modify"><small id="validate-phone">Please input the <b>correct format</b> of Vietnam phone</small></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td class="input-modify"><input type="text" id="address" name="address">
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="alert-modify"><small id="validate-address">Please input your address</small></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td class="gender-modify"><input type="radio" id="male" name="gender" value="Male" checked>
+                            <label for="gender">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="gender">Female</label>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" id="save" value="submit">Save</button>
+            </form>
+        </div>
+        <div class="container-table">
+            <h2>Student List</h2>
+            <table class="second-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Student ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th>Gender</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
