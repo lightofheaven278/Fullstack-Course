@@ -172,22 +172,108 @@
 // p.innerHTML = "I love you !!!";
 // div.appendChild(p);
 
-// Bài 1
-function eventInput() {
-  let studentID = document.getElementById("student-id");
-  let result = studentID.value;
-  console.log("The student ID is: " , result);
+// // Bài 1
+// function eventInput() {
+//   let studentID = document.getElementById("student-id");
+//   let result = studentID.value;
+//   console.log("The student ID is: " , result);
+// }
+
+// // Bai 2
+// let studentName = document.getElementById("full-name");
+// studentName.addEventListener("change", function(){
+//   console.log("Student's name is:" , studentName.value);
+// });
+
+// // Bai 3
+
+// let buttonSubmit = document.getElementById("button");
+// buttonSubmit.onclick = function submitEvent(){
+//   alert("Already submit");
+// };
+
+const num = 5; // number
+const str = "ra"; // string
+
+const student = {
+  name: "cao thanh tung",
+  age: "29",
+  height: "184",
+  teach() {
+    console.log("day vo");
+  },
+};
+
+const pet = {
+  name: "peter parker",
+  weight: 5,
+  "species th": "English cat",
+};
+
+const job = {
+  type: "official staff",
+  workingHour: "8 hours",
+  content: "project management",
+};
+
+console.log(pet.name);
+console.log(pet["species th"]);
+console.log(pet);
+pet.eyeColor = "red";
+console.log(pet);
+
+const listCatKey = Object.keys(pet);
+for (i = 0; i < listCatKey.length; i++) {
+  console.log(listCatKey[i]);
+  console.log(pet[listCatKey[i]]);
 }
 
-// Bai 2
-let studentName = document.getElementById("full-name");
-studentName.addEventListener("change", function(){
-  console.log("Student's name is:" , studentName.value);
-});
-
-// Bai 3
-
-let buttonSubmit = document.getElementById("button");
-buttonSubmit.onclick = function submitEvent(){
-  alert("Already submit");
+const city = {
+  name: "thai binh",
+  location: "north",
+  scale: "normal",
 };
+
+const listCityKey = Object.keys(city);
+for (let i = 0; i < listCityKey.length; i++) {
+  console.log(listCityKey[i]);
+  console.log(city[listCityKey[i]]);
+}
+
+for (let key in city) {
+  console.log(key);
+  console.log(city[key]);
+}
+
+delete city.name;
+console.log(city);
+
+function Employee(name, age, id) {
+  this.name = name;
+  this.age = age;
+  this.id = id;
+}
+
+const employeeTung = new Employee("sv654", "29", "tung");
+
+Employee.prototype.display = function () {
+  console.log("staff id ", this.id);
+  console.log("staff name ", this.name);
+  console.log("staff age ", this.age);
+};
+
+class Student {
+  constructor (id, name, age) {
+    this.id = id;
+    this.age = age;
+    this.name = name;
+  }
+
+  display() {
+    console.log(this.name);
+    console.log(this.id);
+    console.log(this.name);
+  }
+}
+
+const studentTung = new Student ("sv5468", "28", "tung");
