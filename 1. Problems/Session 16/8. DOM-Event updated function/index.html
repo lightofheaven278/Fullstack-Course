@@ -12,73 +12,42 @@
     <section>
         <div class="form">
             <form action="#">
-                <h2>Student Information</h2>
-                <table class="first-table">
-                    <tr>
-                        <td><label for="student-id">Student ID:</label></td>
-                        <td class="input-modify"><input type="text" id="student-id" name="student-id"
-                                placeholder="Please input your student ID"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td class="alert-modify"><small id="validate-id">Please input your student ID</small></td>
-                    </tr>
-                    <tr>
-                        <td><label for="fname">Full Name:</label></td>
-                        <td class="input-modify"><input type="text" id="fname" name="fname" placeholder="Please input your full name"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td class="alert-modify"><small id="validate-name">Please input your full name</small></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email:</label></td>
-                        <td class="input-modify"><input type="email" id="email" name="email" placeholder="Please input your email"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td class="alert-modify"><small id="validate-email">Please input the <b>correct format</b> of email</small></td>
-                    </tr>
-                    <tr>
-                        <td><label for="phone-number">Phone Number:</label></td>
-                        <td class="input-modify"><input type="text" id="phone-number" name="phone-number"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td class="alert-modify"><small id="validate-phone">Please input the <b>correct format</b> of Vietnam phone</small></td>
-                    </tr>
-                    <tr>
-                        <td><label for="address">Address:</label></td>
-                        <td class="input-modify"><input type="text" id="address" name="address">
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td class="alert-modify"><small id="validate-address">Please input your address</small></td>
-                    </tr>
-                    <tr>
-                        <td><label for="gender">Gender:</label></td>
-                        <td class="gender-modify"><input type="radio" id="male" name="gender" value="Male" checked>
-                            <label for="gender">Male</label>
-                            <input type="radio" id="female" name="gender" value="Female">
-                            <label for="gender">Female</label>
-                        </td>
-                    </tr>
-                </table>
-                <button type="submit" id="save" value="submit">Save</button>
+                <h2>Book Management System</h2>
+                <label for="bookId">Book Id: </label>
+                <input type="text" id="bookId" name="bookId" placeholder="Please input book ID"><br>
+                <label for="bookName">Book Name:</label>
+                <input type="text" id="bookName" name="bookName" placeholder="Please input book name"><br>
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" placeholder="Please input book price"><br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Please input book author"><br>
+                <label for="bookStatus">Book Status:</label>
+                <input type="radio" id="active" name="bookStatus" value="Active" checked>
+                <label for="bookStatus">Active</label>
+                <input type="radio" id="inActive" name="bookStatus" value="Inactive">
+                <label for="bookStatus">Inactive</label><br>
+                <button type="submit" id="save">Submit</button>
             </form>
         </div>
+        <hr>
+        <div>
+            <form action="#">
+                <input type="text" id="keyWord" name="search">
+                <button id="search">Search</button>
+                <button id="sort">Sort by price</button>
+            </form>
+        </div>
+        <hr>
         <div class="container-table">
-            <h2>Student List</h2>
-            <table class="second-table">
+            <h2>Books List</h2>
+            <table class="second-table" border="1">
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Student ID</th>
-                        <th>Full Name</th>
-                        <th>Email</th>
-                        <th>Phone Number</th>
-                        <th>Address</th>
-                        <th>Gender</th>
+                        <th>Book ID</th>
+                        <th>Book Name</th>
+                        <th>Price</th>
+                        <th>Author</th>
+                        <th>Status</th>
                         <th colspan="2">Action</th>
                     </tr>
                 </thead>
